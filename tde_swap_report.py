@@ -107,7 +107,7 @@ def main():
     sqlfile.close()
 
     #执行获取的性能数据脚本，写入数据库
-    os.system("mysql -h10.209.7.15 -P3306 db_apollo_monitor -urtrs -prtrs -D db_apollo_monitor <sqlreplace.sql")
+    os.system("mysql -h127.0.0.1 -P3306 db_apollo_monitor -urtrs -prtrs -D db_apollo_monitor <sqlreplace.sql")
 
 if __name__ == '__main__':
     if len(sys.argv) != 1:
